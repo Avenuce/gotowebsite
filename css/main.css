@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+.container {
+  margin: 0 auto;
+  max-width: 934px; }
+
+header {
+  background: linear-gradient(#161616, #424242); }
+  header .logo {
+    display: inline-block; }
+    header .logo img {
+      display: block; }
+  header .container {
+    padding: 44px 0 0 30px; }
+  header .nav {
+    text-align: right; }
+    header .nav .menu {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0; }
+      header .nav .menu li {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 1px;
+        position: relative; }
+        header .nav .menu li a {
+          font-size: 10px;
+          color: #fff;
+          text-decoration: none;
+          width: 132px;
+          display: block;
+          text-align: center;
+          line-height: 38px;
+          border-radius: 5px 5px 0 0;
+          background-color: black;
+          margin-top: 5px;
+          cursor: pointer; }
+        header .nav .menu li a:hover {
+          font-size: 13px;
+          text-transform: uppercase;
+          font-style: italic;
+          background: linear-gradient(to top, #e77d00, #f6a6ec); }
+      header .nav .menu .sub-nav {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+        width: 172px;
+        background: linear-gradient(to right, #e77d00, #f6a6ec);
+        padding-top: 6px; }
+        header .nav .menu .sub-nav li {
+          font: 400 11px Arial, sans-serif;
+          color: #fff;
+          display: block;
+          text-align: left;
+          text-decoration: none;
+          line-height: 25px;
+          cursor: pointer;
+          padding: 0 8px;
+          color: none;
+          border-radius: 0;
+          background-color: none;
+          margin-top: 0; }
+    header .nav .menu > li:hover .sub-nav {
+      display: block; }
+
+/*# sourceMappingURL=main.css.map */
