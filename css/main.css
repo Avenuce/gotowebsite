@@ -10,6 +10,16 @@ body {
   margin: 0 auto;
   max-width: 934px; }
 
+.btn {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 3px;
+  display: inline-block; }
+
 header {
   background: linear-gradient(#161616, #424242); }
   header .logo {
@@ -68,5 +78,35 @@ header {
           font: 400 11px Tahoma, sans-serif; }
     header .nav .menu > li:hover .sub-nav {
       display: block; }
+    header .nav .menu > li:last-of-type .sub-nav {
+      left: auto;
+      right: 0; }
+
+.main {
+  background: #cad2d7;
+  padding: 6px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+  .main .btn {
+    background: linear-gradient(to top, #e77d00, #f6a6ec); }
+  .main .container {
+    border-radius: 7px;
+    border: 1px solid #acb3b7;
+    background-image: url("d:/site2/img/bg_main.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 38px 88px;
+    text-align: right; }
+    .main .container .head {
+      font-size: 28px;
+      color: #353535;
+      line-height: 31px;
+      margin-bottom: 12px;
+      font-weight: 400; }
+      .main .container .head span {
+        font-style: italic;
+        font-size: 30px;
+        color: #ec8c84;
+        text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
