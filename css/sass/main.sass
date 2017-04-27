@@ -22,12 +22,12 @@ header
 			display: inline-block
 			vertical-align: top
 			font-size: 0
-			li
+			> li
 				display: inline-block
 				vertical-align: top
 				margin-left: 1px
 				position: relative
-				a
+				> a
 					font-size: 10px
 					color: #fff
 					text-decoration: none
@@ -39,7 +39,7 @@ header
 					background-color: black
 					margin-top: 5px
 					cursor: pointer
-				a:hover
+				> a:hover
 					font-size: 13px
 					text-transform: uppercase
 					font-style: italic
@@ -49,25 +49,24 @@ header
 				display: none
 				top: 100%
 				left: 0
-				width: 172px
-				background: linear-gradient(to right, #e77d00, #f6a6ec)
+				background: linear-gradient(to top, #e77d00, #f6a6ec)
 				padding-top: 6px
-				li
+				a
+					width: 172px
 					font: 400 11px Arial, sans-serif
 					color: #fff
 					display: block
 					text-align: left
 					text-decoration: none
-					line-height: 25px
+					height: 25px
 					cursor: pointer
 					padding: 0 8px
-					color: none
-					border-radius: 0
-					background-color: none
-					margin-top: 0
-
+				a:hover
+					background: grey
+					font: 400 11px Tahoma, sans-serif
 		.menu > li:hover .sub-nav
 			display: block
+
 
 
 
