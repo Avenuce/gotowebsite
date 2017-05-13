@@ -96,7 +96,8 @@ header {
     background-position: center;
     background-size: cover;
     padding: 100px 38px 88px;
-    text-align: right; }
+    text-align: right;
+    box-sizing: border-box; }
     .main .container .head {
       font-size: 28px;
       color: #353535;
@@ -112,20 +113,26 @@ header {
 .about {
   background: linear-gradient(#e6eaec, #f3f3f3);
   padding: 12px 0 20px; }
+  .about .container {
+    font-size: 0; }
 
 .about_item {
-  width: 306px;
+  width: 308px;
   display: inline-block;
   vertical-align: top;
   border: 1px solid grey;
   border-radius: 7px;
   padding: 0 25px 29px;
   box-sizing: border-box;
-  background: linear-gradient(#fff, #f3f3f3); }
+  background: linear-gradient(#fff, #f3f3f3);
+  margin-right: 5px; }
   .about_item .btn {
     background: linear-gradient(#494949, #121212);
     display: inline-block;
     margin-top: 15px; }
+
+.about_item:last-of-type {
+  margin-right: 0; }
 
 .about_title {
   font-size: 24px;
@@ -133,10 +140,21 @@ header {
   padding: 28px 0 7px 63px;
   border-bottom: 1px dotted grey;
   font-weight: 400;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  position: relative; }
+
+.about_title:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 105px;
+  background-image: url("/site2/img/icon_1.png"); }
 
 .about_img {
   width: 100%;
+  max-height: 120px;
   display: block;
   border-radius: 5px;
   border: 1px solid #fff;
